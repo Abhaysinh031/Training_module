@@ -1,0 +1,276 @@
+/* Global Styles */
+div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    height: 8vh;
+    width: 100%;
+    background-color: #a8dadc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar button {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-2 {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.navbar input {
+    width: 50%;
+    height: 5vh;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Container Styles */
+.container h1 {
+    text-align: center;
+}
+
+.module h2 {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+/* Video Styles */
+.video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-js {
+    width: 100%;
+    height: auto;
+}
+
+/* Description and Video Layout */
+.description-video {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.description-video .description {
+    width: 100%;
+}
+
+.description p {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 450;
+    margin-left: 5px;
+}
+
+/* Next Module Button Styles */
+.next-module {
+    margin-left: 15px;
+}
+
+.next-module button {
+    width: 10%;
+    height: 4vh;
+    border-radius: 7px;
+    box-shadow: 1px 1px 8px 2px;
+    cursor: pointer;
+}
+
+/* Progress Styles */
+.progress {
+    text-align: end;
+    margin-right: 10px;
+}
+
+.progress p{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Paraghraph style*/
+p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Skeleton Loader Styles */
+.skeleton-navbar-item {
+    width: 150px;
+    height: 20px;
+    background: #e0e0e0;
+    margin: 10px;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-container {
+    padding: 20px;
+}
+
+.skeleton-title {
+    width: 50%;
+    height: 30px;
+    background: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-video {
+    width: 100%;
+    height: 300px;
+    background: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-description {
+    width: 80%;
+    height: 20px;
+    background: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-button {
+    width: 120px;
+    height: 40px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pulse effect */
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: row;
+        height: 6vh;
+    }
+
+    .navbar-2 {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navbar input {
+        width: 50%;
+        height: 3vh;
+    }
+
+    .description-video {
+        flex-direction: column;
+    }
+
+    .description-video .description {
+        width: 100%;
+    }
+
+    .next-module button {
+        width: 30%;
+        margin-top: 10px;
+        margin-left: 35%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .navbar{
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar button {
+        font-size: 10px;
+    }
+
+    .navbar input {
+        width: 50%;
+        height: 3vh;
+    }
+
+    .navbar a{
+        font-size: 10px;
+    }
+
+    .navbar-2 {
+        width: 100%;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .module h2 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+
+    .next-module button {
+        width: 50%;
+        height: 4vh;
+        margin-top: 10px;
+        margin-left: 22%;
+    }
+
+    .skeleton-title {
+        width: 80%;
+    }
+
+    .skeleton-video {
+        height: 200px;
+    }
+
+    .skeleton-description {
+        width: 90%;
+    }
+}
