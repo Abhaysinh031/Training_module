@@ -106,3 +106,8 @@ mysql -u root -p training_module < path/to/your/sql/file.sql
 3. Navigate through the modules using the "Next Module" button.
 4. Your progress is automatically saved and can be resumed later.
 
+
+## Video Demonstration
+
+You can watch a demonstration of the application here:
+[Watch Demo Video] ( https://drive.google.com/file/d/1y7IXtQtGHzVz8vQUNKwhVZCN0WUR3_v-/view?usp=sharing ) 
