@@ -31,3 +31,19 @@ This project is a full-stack application designed to provide an interactive trai
 - **Database Configuration**: Configured to connect to a MySQL database using environment variables for database credentials.
 - **Video Modules**: Ordered and retrieved from the database based on their sequence, ensuring users follow the intended learning path.
 - **Progress Tracking**: Implemented to track user progress through the video modules, storing completion status in the database.
+
+# Setup Instructions
+## Prerequisites
+Make sure you have the following installed on your machine:
+
+- **Node.js**
+- **MySQL**
+- **Git**
+
+## Clone the Repository
+
+``` bash
+git clone https://github.com/Abhaysinh031/training_module.git
+cd training_module
+```
+
