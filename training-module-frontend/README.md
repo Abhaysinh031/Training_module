@@ -46,4 +46,63 @@ Make sure you have the following installed on your machine:
 git clone https://github.com/Abhaysinh031/training_module.git
 cd training_module
 ```
+## Backend Setup
+1. Navigate to the backend directory:
+```bash
+  cd training-module-backend
+```
+
+2. Install the necessary dependencies:
+```bash
+npm install
+```
+3. Create a .env file in the training-module-backend directory with the following content:
+```bash
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=training_module
+```
+
+
+5. Start the backend server:
+```bash
+npm start
+```
+
+
+
+## Frontend Setup
+1. Navigate to the frontend directory:
+```bash
+cd ../training-module-frontend
+```
+
+2. Install the necessary dependencies:
+```bash
+npm install
+```
+
+3. Start the frontend server:
+```bash
+npm start
+```
+
+## Database Setup
+
+1. Create a MySQL database:
+```bash
+CREATE DATABASE training_module;
+```
+
+2. Import the database schema and data:
+```bash
+mysql -u root -p training_module < path/to/your/sql/file.sql
+```
+
+# Usage
+1. Access the application in your browser at http://localhost:3000.
+2. The home page will display the video library, where you can start watching the training modules.
+3. Navigate through the modules using the "Next Module" button.
+4. Your progress is automatically saved and can be resumed later.
 
