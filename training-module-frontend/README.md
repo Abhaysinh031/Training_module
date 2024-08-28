@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Training Module App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a full-stack application designed to provide an interactive training module for employees. The application includes a video library where users can watch training videos in sequence and track their progress.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+- **Frontend**: The frontend is built using React.js and provides a user-friendly interface for navigating through the video modules, tracking progress, and interacting with the training content.
+- **Backend**: The backend is developed using Node.js and Express.js, handling video content, user progress, and communication with the MySQL database.
+- **Database**: MySQL is used as the database to store video information, user progress, and other related data.
 
-### `npm start`
+## 1. Detailed Description of the Solution
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Choice of Framework, Libraries, and Parameters
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**:
+  - **React.js**: Chosen for its component-based architecture and efficient rendering using a virtual DOM. It allows for the seamless creation of dynamic user interfaces.
+  - **React Router**: Utilized for client-side routing, enabling navigation between different pages (e.g., video modules and progress dashboard).
+  - **Axios**: Used for making HTTP requests to the backend API, allowing interaction with the server-side database.
+  - **React Top Loading Bar**: Implemented to show a loading indicator at the top of the page, enhancing user experience during data fetching.
+  - **CSS Modules**: Applied to style components locally, ensuring that styles do not conflict across the application.
 
-### `npm test`
+- **Backend**:
+  - **Node.js**: Selected for its non-blocking, event-driven architecture, ideal for building scalable network applications.
+  - **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+  - **MySQL2**: Chosen for its fast and stable performance, used to interact with the MySQL database.
+  - **dotenv**: Used to manage environment variables, ensuring that sensitive data (e.g., database credentials) is not exposed in the source code.
+  - **Body-Parser**: Middleware to parse incoming request bodies in a middleware before handling them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Application Parameters
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Database Configuration**: Configured to connect to a MySQL database using environment variables for database credentials.
+- **Video Modules**: Ordered and retrieved from the database based on their sequence, ensuring users follow the intended learning path.
+- **Progress Tracking**: Implemented to track user progress through the video modules, storing completion status in the database.
